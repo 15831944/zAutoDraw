@@ -1,0 +1,124 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B8FCB1B9-DC57-4F5D-A7D4-DDA2A9ED1B4E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutoDraw</RootNamespace>
+    <AssemblyName>AutoDraw</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="acdbmgd, Version=18.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\AutoCAD 2010\acdbmgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="acmgd, Version=18.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\AutoCAD 2010\acmgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddPlate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPlate.Designer.cs">
+      <DependentUpon>AddPlate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSteel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSteel.Designer.cs">
+      <DependentUpon>AddSteel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CmdCad.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="DBMgr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBMgr.Designer.cs">
+      <DependentUpon>DBMgr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoMgr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoMgr.Designer.cs">
+      <DependentUpon>InfoMgr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainDlg.Designer.cs">
+      <DependentUpon>MainDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main_interface.cs" />
+    <Compile Include="ProjectDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectDlg.Designer.cs">
+      <DependentUpon>ProjectDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddPlate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddPlate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSteel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddSteel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBMgr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DBMgr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoMgr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InfoMgr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainDlg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectDlg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProjectDlg.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

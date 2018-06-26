@@ -1,0 +1,12 @@
+C:\zb\zcad\AutoDraw\AutoDraw\bin\Debug\AutoDraw.dll
+C:\zb\zcad\AutoDraw\AutoDraw\bin\Debug\AutoDraw.pdb
+C:\zb\zcad\AutoDraw\AutoDraw\obj\Debug\ResolveAssemblyReference.cache
+C:\zb\zcad\AutoDraw\AutoDraw\obj\Debug\AutoDraw.MainDlg.resources
+C:\zb\zcad\AutoDraw\AutoDraw\obj\Debug\AutoDraw.csproj.GenerateResource.Cache
+C:\zb\zcad\AutoDraw\AutoDraw\obj\Debug\AutoDraw.dll
+C:\zb\zcad\AutoDraw\AutoDraw\obj\Debug\AutoDraw.pdb
+C:\zb\zcad\AutoDraw\AutoDraw\obj\Debug\AutoDraw.AddPlate.resources
+C:\zb\zcad\AutoDraw\AutoDraw\obj\Debug\AutoDraw.AddSteel.resources
+C:\zb\zcad\AutoDraw\AutoDraw\obj\Debug\AutoDraw.DBMgr.resources
+C:\zb\zcad\AutoDraw\AutoDraw\obj\Debug\AutoDraw.InfoMgr.resources
+C:\zb\zcad\AutoDraw\AutoDraw\obj\Debug\AutoDraw.ProjectDlg.resources
